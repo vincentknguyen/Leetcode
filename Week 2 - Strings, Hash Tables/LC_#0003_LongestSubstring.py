@@ -17,7 +17,7 @@ s1 = "abcabcbb"
 
 
 def longestSubstring(s):
-    #Initialize variables for the sliding window
+    #Initialize variables and pointers for the sliding window
     result = 1
     left = 0
     right = 1
@@ -29,11 +29,16 @@ def longestSubstring(s):
     #moving the right pointer from index 1 -> end of string
     while right < len(s):
         
+        
+        
+        #2. duplicate character in set
         #if there is a duplicate, shift window to the right by 1
         if s[right] == s[left]:
             left += 1
             right += 1
         
+        
+        #3. left edge in seen
         #next char is found in the window
         # shift left edge of window to the right until next char is no longer in window
 
@@ -43,12 +48,17 @@ def longestSubstring(s):
                     
                     #remove seen character from string
                     seen.remove(s[left])
+                 
+                #then move the left pointer forward
                 left += 1
             
-            #expand right edge to include next char
+            #expand right edge to include next char in the set
             seen.add(s[right])
             right += 1
         
+        
+        
+        #1. next char is new
         #next char is new, expend the right edge
         else:
             seen.add(s[right])
