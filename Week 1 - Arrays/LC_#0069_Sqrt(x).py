@@ -5,9 +5,8 @@ Created on Sun Jul 25 22:29:02 2021
 
 @author: vincentnguyen
 
-Time: O(n), due to the while loop going through the array
-Space: O(1). Memory used at once -> what is contained in the intermediate variables 
-
+Time: O(n), due to the while loop 
+Space: O(n)
 https://leetcode.com/problems/sqrtx/
 """
 
@@ -36,7 +35,11 @@ class Solution(object):
                 temp = temp + 1
         
 """
-    #O(log n solution)
+    #More optimal solution
+        Time: O(log n), due to Binary search
+        Space: O(1)
+        
+        
     def mySqrt(self, n):
             if n == 0:
                 return 0
