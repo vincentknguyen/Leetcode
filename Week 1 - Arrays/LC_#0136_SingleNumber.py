@@ -4,8 +4,8 @@
 Created on Sun Jul 25 22:44:19 2021
 
 @author: vincentnguyen
-Time: O(n), due to the for loops
-Space: O(1). Memory used at once -> hashmap solution is O(1)
+Time: O(n), due to the for loop iterating through an array "nums"
+Space: O(n) 
 
 https://leetcode.com/problems/single-number/
 """
