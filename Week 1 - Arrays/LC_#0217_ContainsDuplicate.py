@@ -5,8 +5,10 @@ Created on Sun Jul 25 22:34:49 2021
 
 @author: vincentnguyen
 
-Time: O(n) done by the for loop? or O(1) because of the hashmap?
-Space: O(1). Memory used at once is constant bcz of intermediary variables
+Time: O(n) done by the for loop (going through all n units of input). For each item, do a lookup
+    O(n + c * n) = O(n)
+    
+Space: O(n). At the limit, your map will have every single element in the original input
 
 https://leetcode.com/problems/contains-duplicate/
 """
