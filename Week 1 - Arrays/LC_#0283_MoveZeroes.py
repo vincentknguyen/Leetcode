@@ -4,9 +4,10 @@
 Created on Sun Jul 25 22:43:53 2021
 
 @author: vincentnguyen
-Time: O(n) done by the for loop
-Space: O(1). Memory used at once is constant bcz of intermediary variables
+Time: O(n + n) done by the two (non-nested) for loops
+Space: O(n). Integer array as an input
 
+https://leetcode.com/problems/move-zeroes/
 
 """
 
