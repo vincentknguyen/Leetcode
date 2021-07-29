@@ -4,8 +4,8 @@
 Created on Sun Jul 25 22:36:05 2021
 
 @author: vincentnguyen
-Time: O(logn), due to the 2 pointers approach dividing the response in half (binary search)
-Space: O(1). Memory used at once -> what is contained in the intermediate variables 
+Time: O(n) -> while loop
+Space: O(n). Input of the function is an array, which takes up O(n) space
 
 
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
