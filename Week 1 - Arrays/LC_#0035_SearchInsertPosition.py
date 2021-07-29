@@ -6,7 +6,7 @@ Created on Sun Jul 25 22:36:32 2021
 @author: vincentnguyen
 
 Time: O(logn), due to the 2 pointers approach dividing the response in half (binary search)
-Space: O(1). Memory used at once -> what is contained in the intermediate variables 
+Space: O(1). Memory used at once -> the 3 value of middle, left and right. Therefore, space complexity scales constantly depending on input
 
 
 https://leetcode.com/problems/search-insert-position/
@@ -31,3 +31,7 @@ class Solution(object):
                 right -= 1
 
         return left
+    
+    
+    
+    
