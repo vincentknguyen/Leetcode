@@ -7,6 +7,8 @@ Created on Sun Jul 25 22:25:47 2021
 
 Time: O(n), due to the while loop going through the array
 Space: O(1). Memory used at once -> what is contained in the intermediate variables (temp, rev, dig)
+    only 1 constant set of variables stored at once, regardless of input
+    Input of the function is an integer too
 
 
 https://leetcode.com/problems/palindrome-number/
