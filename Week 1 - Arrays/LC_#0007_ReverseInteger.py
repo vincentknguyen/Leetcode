@@ -6,7 +6,8 @@ Created on Sun Jul 25 22:18:50 2021
 @author: vincentnguyen
 
 Time: O(n), due to the for loop going through the string
-Space: O(1). Memory used at once is what gets stored in the intermediate variables (x_str, string, temp)
+Space: O(1). Storing values in variables. So only storing 1 thing at a a time -> O(1)
+    string = string + x_str[i]
 
 https://leetcode.com/problems/reverse-integer/
 """
@@ -20,7 +21,7 @@ class Solution(object):
 
         string = ''    
 
-        #check the first character(-1)
+        #check the first character and see if it's positive or negative(-1)
 
         x_str = str(x)
         if x_str[0] == "-":
@@ -30,7 +31,7 @@ class Solution(object):
             flag = 1
             x_str = x_str
 
-
+        #go through the string, from back to front
         for i in range(len(x_str)-1,-1,-1):
             string = string + x_str[i]
 
