@@ -7,6 +7,8 @@ Smart solution:
   Time: O(n)
   Space: O(n)
 
+https://leetcode.com/problems/valid-anagram/
+
 """
 
 class Solution(object):
@@ -16,6 +18,8 @@ class Solution(object):
         #Smart way to do it: sorting        
         return sorted(s) == sorted(t)        
         """
+        
+        
         #Dictionary solution
         dict_s = {}        
 
