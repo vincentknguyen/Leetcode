@@ -4,8 +4,8 @@
 Created on Sun Jul 25 22:33:05 2021
 
 @author: vincentnguyen
-Time: O(log n), due to the binary search done using the 2 pointers
-Space: O(1). Memory used at once -> intermediate variables
+Time: O(n), while loop
+Space: O(n), input is an array
 
 
 https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
