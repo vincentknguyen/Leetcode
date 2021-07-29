@@ -5,8 +5,8 @@ Created on Sun Jul 25 22:37:17 2021
 
 @author: vincentnguyen
 
-Time: O(n) done by the for loop? or O(1) because of the hashmap?
-Space: O(1). Memory used at once is constant bcz of intermediary variables
+Time: O(n), for loop 
+Space: O(n). Input is an array
 
 https://leetcode.com/problems/majority-element/
 """
@@ -24,6 +24,9 @@ class Solution(object):
 
             if hashmap[i] > majority:
                 return i
+            
+            
+            
     """
     def majorityElement(self, nums):
         majority = nums[0]
