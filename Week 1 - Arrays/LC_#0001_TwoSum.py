@@ -5,9 +5,8 @@ Created on Sun Jul 25 22:30:35 2021
 
 @author: vincentnguyen
 
-Time: O(n), due to the for loop going through the array
-Space: O(1). Memory used at once is what gets stored in the Complement Hashmap. Using a hashmap is O(1)
-
+Time: O(n), due to the for loop going through the array (i to len(arr))
+Space: O(n). The amount of memory used at once increases linearly, as the size of the input increases
 
 https://leetcode.com/problems/two-sum/
 
@@ -37,3 +36,5 @@ class Solution(object):
 
                 #if not, store it within the 
                 complementMap[complement] = i   #{7,0} = #key, value
+                
+                
