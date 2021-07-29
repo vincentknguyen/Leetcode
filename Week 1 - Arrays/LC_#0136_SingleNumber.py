@@ -5,7 +5,7 @@ Created on Sun Jul 25 22:44:19 2021
 
 @author: vincentnguyen
 Time: O(n), due to the for loop iterating through an array "nums"
-Space: O(n) 
+Space: O(n), input of the function is an array
 
 https://leetcode.com/problems/single-number/
 """
