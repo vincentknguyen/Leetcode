@@ -6,7 +6,9 @@ Created on Mon Jul 26 13:33:36 2021
 @author: vincentnguyen
 
 Time: O(n*2) = O(n), due to the for and while loops going through the string s
-Space: O(1). Memory used at once is what gets stored in the Complement Hashmap. Using a hashmap is O(1)
+Space: O(n). String is O(n)
+
+https://leetcode.com/problems/first-unique-character-in-a-string/
 
 """
 
