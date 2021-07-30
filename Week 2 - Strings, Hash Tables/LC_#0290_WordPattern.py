@@ -1,3 +1,13 @@
+"""
+https://leetcode.com/problems/word-pattern/
+
+Time: O(n)
+Space: O(n)
+
+"""
+
+
+
 class Solution(object):
     def wordPattern(self, pattern, s):
             #Store the words
