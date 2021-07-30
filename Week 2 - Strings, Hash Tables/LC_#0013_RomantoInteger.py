@@ -1,6 +1,6 @@
 """
 Time: O(n)
-Space: 
+Space: O(1)
 
 https://leetcode.com/problems/roman-to-integer/
 """
