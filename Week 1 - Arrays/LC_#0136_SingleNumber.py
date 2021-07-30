@@ -10,8 +10,15 @@ Space: O(n), input of the function is an array
 https://leetcode.com/problems/single-number/
 """
 
-class Solution(object):
+class Solution(object):       
     def singleNumber(self,nums):
+        #O(1) solution
+        return 2*sum(set(nums)) - sum(nums)
+        
+        
+        """
+        #O(n) space solution
+        
         store = {}
 
         #iterating over a list, not its inices
@@ -26,4 +33,4 @@ class Solution(object):
 
         #turn it into a list to return the only item in the list
         return list(store.keys())[0]
-        
+        """
