@@ -4,8 +4,9 @@ https://leetcode.com/problems/first-bad-version/
 
 class Solution(object):
     def firstBadVersion(self, n):
-        #All the versions after a bad version are also bad
         
+        
+        #method using the template 2 binary search
         l,r = 1,n
         
         while(l < r):
