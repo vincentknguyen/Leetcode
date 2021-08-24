@@ -27,6 +27,30 @@ class Solution(object):
         
         result=[]
         stack=[]
+        
+        while root is not None or stack != []:
+            #keep going left until we have a root
+            while root:
+                stack.append(root)
+                root = root.left
+
+            #check the last value in the stack after traversing all the way down left
+            temp = stack[-1].right
+
+            #if the last value in the stack has a right subtree
+            
+            if temp:
+                root = temp
+            else:
+                temp = stack.pop()
+                result.append(temp.val)
+                while stack and temp == stack[-1].right:
+                    temp = stack.pop()
+                    result.append(temp.val)
+        return result
+        
+        
+        '''
         while root or stack:
             while root:
                 stack.append(root) # push nodes into the stack
@@ -38,5 +62,5 @@ class Solution(object):
             else:
                 root=None #Force to quit the loop
         return(result)
-        
+        '''
         
